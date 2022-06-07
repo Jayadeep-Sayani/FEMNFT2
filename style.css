@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  max-height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  height: 550px;
+  width: 305px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.image-card:hover {
+
+}
+
+.nft {
+  width: 90%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.image-card {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  border-radius: inherit;
+}
+
+.card h3 {
+  color: hsl(0, 0%, 100%);
+  margin-left: 20px;
+}
+
+.card * {
+  font-family: 'Outfit', sans-serif;
+}
+
+.card p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+
+
+
+
+.image-card > .hover-img {
+  transition: 0.3s ease;
+  position: absolute;
+  width: 90%;
+  height: 275px;
+  border-radius: inherit;
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0%;
+}
+
+.image-card svg {
+  transition: 0.3s ease;
+  opacity: 0%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 20;
+  opacity: none;
+
+
+  transform: translate(-50%, -50%);
+}
+
+.cost {
+  margin-top: 30px;
+  margin-left: 20px;
+  color: hsl(178, 100%, 50%);
+}
+
+.image-card:hover svg {
+  opacity: 100%;
+}
+
+.image-card:hover .hover-img {
+  opacity: 50%;
+}
+
+.cost span {
+  margin-left: 5px;
+}
+
+.cost svg {
+  transform: translate(0, 3px);
+}
+
+.time {
+  color: hsl(215, 51%, 70%);
+  float: right;
+  margin-right: 20px;
+  transform: translate(0, -20px);
+}
+
+.time span {
+  margin-left: 5px;
+}
+
+.time svg {
+  transform: translate(0, 3px);
+}
+
+.info::after {
+  content: '';
+  display: flex;
+  width: 90%;
+  height: 1px;
+  margin: auto;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.created-info img {
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 30px;
+  width: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.purple-text {
+  color: hsl(215, 51%, 70%);
+}
+
+.white-text {
+  color: hsl(0, 0%, 100%);
+}
+
+
+
+.created-info {
+  display: flex;
+}
+.created-text {
+  transform: translate(10px, 30px);
+}
